@@ -19,13 +19,11 @@ interface Vehicle {
 class Taxi implements Vehicle {
   currentLocation: location;
   travelTo(location: location): void {
-    console.log(
-      `Taxi is going to ${location.x} , ${location.y} from ${this.currentLocation.x} , ${this.currentLocation.y} `
-    );
+    console.log(`Taxi is going to ${location.x} , ${location.y}`);
   }
 }
 
 let sariTaxi = new Taxi();
-sariTaxi.currentLocation.x = 172;
-sariTaxi.currentLocation.y = 184;
+//sariTaxi.currentLocation.x = 172;
+//sariTaxi.currentLocation.y = 184;
 sariTaxi.travelTo({ x: 10, y: 11 });
